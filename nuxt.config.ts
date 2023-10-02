@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  ssr: false,
   nitro: {
     esbuild: {
       options: {
@@ -14,11 +13,11 @@ export default defineNuxtConfig({
     }
   },
   vite: {
-    //ssr: { noExternal: ["remult"] },
+    ssr: { noExternal: ["remult"] },
     esbuild: {
       tsconfigRaw: {
         compilerOptions: {
-          experimentalDecorators: true
+          experimentalDecorators: true,
         }
       }
     }

@@ -3,7 +3,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 import { remult } from "remult";
-import { Task } from "./shared/Task";
+import { Task } from "./shared/task";
 
 const taskRepo = remult.repo(Task);
 const tasks = ref<Task[]>([]);
